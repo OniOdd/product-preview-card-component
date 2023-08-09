@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
@@ -14,7 +14,29 @@
 </head>
 
 <body>
-  
+  <main>
+    <h1>Product preview card component</h1>
+    <div>
+      <img src="./images/image-product-desktop.jpg"
+            srcset="./images/image-product-mobile.jpg 686w, ./images/image-product-desktop.jpg 600w"
+            sizes="(max-width: 500px) 686px, 600px" alt="Image of the product">
+      <article>
+        <h2>Perfume</h2>
+        <h3>Gabrielle Essence Eau De Parfum</h3>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div>
+          <span>&dollar;149.99</span>
+          <span>&dollar;169.99</span>
+        </div>
+        <button type="button">Add to Cart</button>
+      </article>
+    </div>
+  </main>
+
+<!-- A script that shows a message when you click on the "Add to Cart" button -->
+<script src="./js/script.js"></script>
 </body>
 
 </html>
