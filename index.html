@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
@@ -14,26 +14,45 @@
 </head>
 
 <body>
-  <main>
-    <h1>Product preview card component</h1>
-    <div>
-      <img src="./images/image-product-desktop.jpg"
-            srcset="./images/image-product-mobile.jpg 686w, ./images/image-product-desktop.jpg 600w"
-            sizes="(max-width: 500px) 686px, 600px" alt="Image of the product">
-      <article>
-        <h2>Perfume</h2>
-        <h3>Gabrielle Essence Eau De Parfum</h3>
-        <p>
+  <main class="page">
+    <!-- Component title -->
+    <h1 class="page__title">Product preview card component</h1>
+    <!-- Block "Card" -->
+    <div class="card">
+      <!-- Image that changes depending on the device (mobile or desktop) -->
+      <picture>
+        <source
+          srcset="./images/image-product-mobile.webp 686w, ./images/image-product-desktop.webp 600w"
+          sizes="(max-width: 500px) 686px, 600px" type="image/webp">
+        <source
+          srcset="./images/image-product-mobile.jpg 686w, ./images/image-product-desktop.jpg 600w"
+          sizes="(max-width: 500px) 686px, 600px" type="image/jpg">
+        <img class="card__image" src="./images/image-product-desktop.jpg" alt="Image of Gabrielle perfume">
+      </picture>
+      <!-- The main content of this card -->
+      <article class="card__container">
+        <h2 class="card__label">Perfume</h2>
+        <h3 class="card__title">Gabrielle Essence Eau De Parfum</h3>
+        <p class="card__text">
           A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <div>
-          <span>&dollar;149.99</span>
-          <span>&dollar;169.99</span>
+        <div class="card__price">
+          <span class="card__value-now">&dollar;149.99</span>
+          <span class="card__value-before">&dollar;169.99</span>
         </div>
-        <button type="button">Add to Cart</button>
+        <button class="card__btn" type="button">Add to Cart</button>
       </article>
     </div>
   </main>
+  <!-- Block "Attribution" -->
+  <footer>
+    <address class="attribution">
+      Challenge by <a class="attribution__link" 
+                      href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+                      target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="attribution__link" href="https://www.linkedin.com/in/mykyta-kavetskyi/" target="_blank">Mykyta Kavetskyi</a>.
+    </address>
+  </footer>
 
 <!-- A script that shows a message when you click on the "Add to Cart" button -->
 <script src="./js/script.js"></script>
