@@ -28,22 +28,40 @@ body {
   justify-content: center;
   align-items: center;
   min-block-size: 100%;
+  padding-block: 2em;
+  padding-inline: 1em;
   font: normal 500 1.4rem "Montserrat", sans-serif;
+  color: #000;
+  background-color: #f2ebe3;
 }
 
 .page {
 }
 .page__title {
+  margin-block-end: 1em;
+  font-size: 1.8rem;
+  text-align: center;
 }
 .card {
+  max-inline-size: 340px;
+  margin-block-end: 1em;
+  color: #6c7289;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.card__image {
-}
-.card__container {
-}
+.card__image { inline-size: 100%; }
+.card__container { padding: 1.6em; }
 .card__label {
+  margin-block-end: .7em;
+  font-size: 1.3rem;
+  letter-spacing: .4em;
+  text-transform: uppercase;
 }
 .card__title {
+  margin-block-end: .4em;
+  font-size: 3rem;
+  color: #000;
 }
 .card__text {
 }
