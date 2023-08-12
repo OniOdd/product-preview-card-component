@@ -122,6 +122,7 @@ body {
 /* ---- Media Queries ---- */
 @media (min-width: 90em) {
   .title { font-size: 2.5rem; }
+
   .card {
     display: flex;
     max-inline-size: 600px;
