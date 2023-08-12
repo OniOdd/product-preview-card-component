@@ -62,6 +62,7 @@ body {
 .card__title {
   margin-block-end: .4em;
   font-size: 3rem;
+  line-height: 1.1;
   color: #000;
 }
 .card__text {
@@ -125,10 +126,11 @@ body {
 
   .card {
     display: flex;
+    max-block-size: 450px;
     max-inline-size: 600px;
     margin-block-end: 1.6em;
   }
-  .card__image { block-size: 100%; }
+  /* .card__image { block-size: 100%; } */
   .card__container { padding: 2.7em; }
   .card__image,
   .card__container { flex: 0 0 50%; }
