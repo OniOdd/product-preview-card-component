@@ -130,7 +130,6 @@ body {
     max-inline-size: 600px;
     margin-block-end: 1.6em;
   }
-  /* .card__image { block-size: 100%; } */
   .card__container { padding: 2.7em; }
   .card__image,
   .card__container { flex: 0 0 50%; }
